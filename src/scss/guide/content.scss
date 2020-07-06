@@ -1,0 +1,158 @@
+.guide-card-form {
+  width: 100%;
+  height: 400px;
+  text-align: left;
+  font-size: 17.5px;
+
+  .guide-card-helper {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    a {
+      color: #1890ff;
+      font-size: 1.1em;
+      &:visited {
+        color: #0050b3;
+      }
+    }
+    &.sized {
+      font-size: 0.9em;
+    }
+    &.small {
+      font-size: 0.85em;
+    }
+  }
+  .mb-big {
+    margin-bottom: 40px;
+  }
+
+  .guide-card-loading {
+    height: calc(100% - 68px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100px;
+    }
+  }
+  .guide-card-input-group {
+    display: flex;
+    margin-bottom: 10px;
+    .guide-card-label {
+      margin-right: 5px;
+    }
+    .guide-card-input {
+      width: 100%;
+      padding: 10px;
+      font-size: 17.5px;
+    }
+  }
+
+  .guide-card-ul {
+    height: 277px;
+    overflow-y: auto;
+    font-size: 22.5px;
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #333;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+    .guide-card-li {
+      font-size: 0.75em;
+      background-color: darken(#fafafa, 5%);
+      padding: 10px;
+      border-radius: 5px;
+      margin: 5px 0;
+      transition: background-color 0.2s;
+      cursor: pointer;
+
+      width: calc(100% - 30px);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      .guide-card-li-header {
+        font-size: 0.75em;
+        display: flex;
+        justify-content: space-between;
+      }
+      .guide-card-li-content {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      &:not(.disabled):hover {
+        background-color: darken(#fafafa, 10%);
+      }
+      &.disabled {
+        color: #aaa;
+        cursor: disabled;
+        pointer-events: none;
+      }
+    }
+  }
+  .guide-card-form-footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+  }
+  .guide-card-button {
+    border: none;
+    border-radius: 2.5px;
+    padding: 10px;
+    background-color: #282c34;
+    font-size: 15px;
+    color: #fafafa;
+    transition: all 0.2;
+    cursor: pointer;
+    &.wide {
+      width: 100%;
+    }
+    &:hover {
+      background-color: lighten(#282c34, 5%);
+    }
+  }
+
+  .json-html {
+    height: 225px;
+    font-size: 12.5px;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #333;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+  .guide-tab-title {
+    margin-top: 10px;
+    font-weight: 600;
+    .guide-card-helper {
+      font-size: 10px;
+    }
+  }
+  .guide-tab-loading {
+    height: 312.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100px;
+    }
+  }
+}
